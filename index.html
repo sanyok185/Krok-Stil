@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Krok & Stil</title>
+	<meta charset="UTF-8">
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,800,900&display=swap);*{padding:0;margin:0;border:0}*,*::after,*::before{box-sizing:border-box}*::after,*::before{display:inline-block}body,html{height:100%;min-width:320px}body{color:#fff;line-height:1;font-family:Roboto;font-size:1.25rem;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}button,input,textarea{font-family:Roboto;font-size:inherit;line-height:inherit;color:inherit;background-color:rgba(0,0,0,0)}input,textarea{width:100%}label{display:inline-block}button,option,select{cursor:pointer}a{display:inline-block;color:inherit;text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-weight:inherit;font-size:inherit}body{line-height:1.2;background-color:#7b3b11}.lock body{overflow:hidden;touch-action:none;-ms-scroll-chaining:none;overscroll-behavior:none}.wrapper{min-height:100%;display:flex;flex-direction:column;overflow:hidden}@supports (overflow:clip){.wrapper{overflow:clip}}.wrapper>main{flex:1 1 auto}.wrapper>*{min-width:0}[class*=__container]{max-width:75rem;margin:0 auto;padding:0 .9375rem}[class*="--gc"]{display:grid;min-width:0;grid-template-columns:.9375rem 1fr minmax(auto,73.125rem) 1fr .9375rem}[class*="--gc"]>*{min-width:0;grid-column:3/4}body::after{content:"";background-color:rgba(0,0,0,.5);position:fixed;width:100%;height:100%;top:0;left:0;opacity:0;transition:opacity .8s ease 0s;pointer-events:none;z-index:149}.popup-show body::after{opacity:1}.popup{position:fixed;top:0;left:0;bottom:0;right:0;padding:30px 10px;transition:visibility .8s ease 0s;visibility:hidden;pointer-events:none}.popup_show{z-index:150;visibility:visible;overflow:auto;pointer-events:auto}.popup_show .popup__content{visibility:visible;-webkit-transform:scale(1);transform:scale(1)}.popup__wrapper{display:flex;flex-direction:column;align-items:center;min-height:100%;flex:1 1 auto;width:100%;display:flex;justify-content:center;align-items:center}.popup__content{visibility:hidden;-webkit-transform:scale(0);transform:scale(0);transition:-webkit-transform .3s ease 0s;transition:transform .3s ease 0s;transition:transform .3s ease 0s,-webkit-transform .3s ease 0s;background-color:#eee;padding:30px;width:100%;max-width:900px;border-radius:20px}.lock .popup__content{visibility:visible}.popup{color:#0d3021;text-align:center}.popup__content{display:grid;justify-items:center}.popup__text{margin-bottom:.9375rem}.popup__close{background-color:#482209;color:#fff;margin-top:1.875rem;padding:1.875rem;font-size:1.625rem;text-transform:uppercase;border-radius:.625rem}.spollers{display:grid;gap:15px}.spollers__item{font-size:1.25rem}.spollers__title{width:100%;cursor:default;text-align:left;background-color:#482209;padding:.75rem .9375rem;border-radius:.3125rem;position:relative;list-style:none}.spollers__title::-webkit-details-marker,.spollers__title::marker{display:none}._spoller-init .spollers__title{cursor:pointer}._spoller-init .spollers__title::after,._spoller-init .spollers__title::before{content:"";position:absolute;right:15px;top:50%;background-color:#fff;height:2px;width:15px;transition:-webkit-transform .5s ease 0s;transition:transform .5s ease 0s;transition:transform .5s ease 0s,-webkit-transform .5s ease 0s}._spoller-init .spollers__title::before{-webkit-transform:translate(-75%,-50%) rotate(40deg);transform:translate(-75%,-50%) rotate(40deg)}._spoller-init .spollers__title::after{-webkit-transform:translate(0,-50%) rotate(-40deg);transform:translate(0,-50%) rotate(-40deg)}._spoller-init .spollers__title._spoller-active::before{-webkit-transform:translateX(-75%) rotate(-40deg);transform:translateX(-75%) rotate(-40deg)}._spoller-init .spollers__title._spoller-active::after{-webkit-transform:rotate(40deg);transform:rotate(40deg)}.spollers__body{background-color:#482209;padding:1.25rem;border-top:1px solid #fff}.ibg{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.ibg--top{-o-object-position:top;object-position:top}.ibg--bottom{-o-object-position:bottom;object-position:bottom}.ibg--left{-o-object-position:left;object-position:left}.ibg--right{-o-object-position:right;object-position:right}.ibg--contain{-o-object-fit:contain;object-fit:contain}.title{font-weight:700;text-align:center}.image{border-radius:.9375rem;position:relative;overflow:hidden;aspect-ratio:3/2}.image img{position:absolute;width:100%;height:100%;top:0;left:0;-o-object-fit:cover;object-fit:cover;transition:all .45s}.header{position:fixed;z-index:100;left:0;height:100%;background-color:#482209}.menu{height:100%}.menu__body{height:100%}.menu__list{height:100%;display:grid;align-items:center;grid-template-rows:repeat(5,auto)}.menu__item{width:100%;height:100%}.menu__link{padding:1.25rem;font-weight:800;display:flex;justify-content:flex-start;align-items:center;width:100%;height:100%}.icon-menu{position:fixed;top:1.875rem;left:.625rem;display:none}.hero__container{display:grid;justify-items:center}.hero__title{font-weight:800}.mission__items{display:grid;gap:2.5rem}.item-mission{display:flex;align-items:center;gap:2.5rem}.item-mission__title{font-weight:600}.item-mission__title:not(:last-child){margin-bottom:1.875rem}.item-mission__image{aspect-ratio:3/2;border-radius:.9375rem;overflow:hidden;height:100%;position:relative}.item-mission__image img{position:absolute;width:100%;height:100%;top:0;left:0}.quality__body{display:flex;gap:2.5rem}.quality__items{display:grid;gap:2.5rem}.quality__text{display:grid;gap:1.25rem}.item-quality{display:flex;gap:2.5rem;align-items:center}.range__items{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(13.75rem,1fr))}.item-range{overflow:hidden;display:flex;flex-direction:column;background-color:#482209;border-radius:.9375rem}.item-range__image{width:100%;aspect-ratio:6/5}.item-range__content{padding:.9375rem;display:flex;flex:1 1 auto;flex-direction:column;gap:.9375rem}.item-range__name{font-weight:700;font-size:1.375rem;transition:all .3s}.item-range__desctiption{font-size:1rem;font-weight:300;flex:1 1 auto;margin-bottom:auto}.item-range__footer{display:flex;justify-content:space-between;gap:1.25rem;align-items:center}.item-range__price{font-size:1.625rem;white-space:nowrap;font-weight:800}.item-range__button{border:1px solid #fff;border-radius:.625rem;padding:.5rem 1.0625rem;background-color:#fff;color:#482209;transition:all .3s}.order__content{display:flex;justify-content:space-between;gap:2.5rem;background-color:#482209;border-radius:.9375rem;padding:1.875rem;align-items:center}.order__title{font-weight:600}.order__button{white-space:nowrap;font-weight:900;background-color:#fff;border:1px solid #fff;text-transform:uppercase;padding:1.875rem 3.125rem;border-radius:.625rem;display:flex;justify-content:center;align-items:center;color:#482209;transition:all .4s}.footer{background-color:#482209}.footer__container{display:grid;grid-template-columns:1fr auto 1fr;gap:2.5rem;align-items:center}.footer__links{display:grid;gap:.75rem;align-items:center}.footer__questions a{font-style:italic}.history__body{display:flex;gap:2.5rem}.history__items{display:grid;gap:2.5rem}.history__text{display:grid;gap:1.25rem}.item-history{display:flex;gap:2.5rem;align-items:center}.form-contact-page{justify-self:center;display:grid;gap:.625rem;background-color:#fff;color:#482209;border-radius:1.25rem;padding:1.875rem;width:100%}.form-contact-page__label{font-weight:700}.form-contact-page__input{width:100%;border:1px solid #482209;height:3.125rem;border-radius:.625rem;padding:.625rem 1.25rem}.form-contact-page__input::-webkit-input-placeholder{color:#482209}.form-contact-page__input:-ms-input-placeholder{color:#482209}.form-contact-page__input::-ms-input-placeholder{color:#482209}.form-contact-page__input::placeholder{color:#482209}.form-contact-page textarea{height:6.25rem}.form-contact-page__button{background-color:#482209;color:#fff;margin-top:1.875rem;padding:1.25rem;text-transform:uppercase;border-radius:.625rem}.policy__label{text-align:center;font-weight:700;margin-bottom:1.875rem}.policy__text{display:grid;gap:1.25rem}.cookie-popup{width:60%;justify-self:center;position:fixed;bottom:30px;left:20px;right:20px;background:#482209;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.2);z-index:9999;display:none;border-radius:10px;justify-content:center}.cookie-popup p{margin:0 0 10px}.cookie-popup .buttons{display:flex;gap:10px;justify-content:center}.cookie-popup button{padding:8px 16px;border:none;border-radius:5px;cursor:pointer}#acceptCookies{background-color:#4caf50;color:#fff}#declineCookies{background-color:#f44336;color:#fff}@media (min-width:47.99875em)and (min-width:75em){.page{margin-left:9.375rem}.footer{margin-left:9.375rem}}@media (min-width:47.99875em){.item-mission__image{flex:0 0 50%}}@media (min-width:61.99875em){.hero__text{max-width:80%}.item-quality__image{flex:0 0 50%}.order__title{max-width:60%}.item-history__image{flex:0 0 50%}.form-contact-page{width:60%}}@media (min-width:75em){.popup__text{font-size:1.625rem}.title{font-size:3rem}.title{margin-bottom:2.5rem}.text{font-size:1.5rem}.header{max-width:9.375rem}.menu__link{font-size:1.375rem}.hero{padding-top:6.25rem}.hero{padding-bottom:6.25rem}.hero__title{font-size:3.75rem}.hero__title{margin-bottom:2.5rem}.mission{padding-bottom:6.25rem}.item-mission__title{font-size:2.25rem}.item-mission__text{font-size:1.375rem}.quality{padding-bottom:6.25rem}.range{padding-bottom:6.25rem}.faq{padding-bottom:6.25rem}.order{padding-bottom:6.25rem}.order__title{font-size:1.875rem}.order__button{font-size:1.625rem}.footer{padding-top:1.25rem}.footer{padding-bottom:1.25rem}.footer__link{font-size:1.25rem}.footer__note{font-size:.875rem}.footer__questions{font-size:1.25rem}.history{padding-top:6.25rem}.history{padding-bottom:6.25rem}.contact-page{padding-top:5rem}.contact-page{padding-bottom:6.25rem}.form-contact-page__label{font-size:1.5rem}.policy{padding-top:5rem}.policy{padding-bottom:6.25rem}.policy__label{font-size:1.875rem}}@media (max-width:20em){.popup__text{font-size:1.25rem}.title{font-size:2rem}.title{margin-bottom:1.5625rem}.text{font-size:1.125rem}.header{max-width:8.125rem}.menu__link{font-size:1.125rem}.hero{padding-top:3.75rem}.hero{padding-bottom:3.75rem}.hero__title{font-size:3rem}.hero__title{margin-bottom:1.5625rem}.mission{padding-bottom:3.75rem}.item-mission__title{font-size:1.75rem}.item-mission__text{font-size:1.125rem}.quality{padding-bottom:3.75rem}.range{padding-bottom:3.75rem}.faq{padding-bottom:3.75rem}.order{padding-bottom:3.75rem}.order__title{font-size:1.5rem}.order__button{font-size:1.25rem}.footer{padding-top:.9375rem}.footer{padding-bottom:.9375rem}.footer__link{font-size:1rem}.footer__note{font-size:.75rem}.footer__questions{font-size:1rem}.history{padding-top:3.75rem}.history{padding-bottom:3.75rem}.contact-page{padding-top:2.5rem}.contact-page{padding-bottom:3.75rem}.form-contact-page__label{font-size:1.125rem}.policy{padding-top:2.5rem}.policy{padding-bottom:3.75rem}.policy__label{font-size:1.5rem}}@media (max-width:61.99875em){.item-mission:nth-child(2){flex-direction:column-reverse}.item-mission{flex-direction:column}.item-quality:nth-child(2){flex-direction:column-reverse}.item-quality{flex-direction:column}.item-quality__image{width:100%;aspect-ratio:5/3;height:auto}.order__content{flex-direction:column;gap:1.875rem}.footer__container{grid-template-columns:1fr;text-align:center;gap:1.25rem}.footer__links{order:3}.footer__links{display:flex;flex-wrap:wrap;justify-content:space-around}.footer__note{order:2}.footer__questions{order:1}.item-history:nth-child(2){flex-direction:column-reverse}.item-history{flex-direction:column}.item-history__image{width:100%;aspect-ratio:5/3;height:auto}}@media (max-width:47.99875em){.header{width:3.75rem}.menu{background-color:#482209;position:fixed;width:70%;height:100%;left:-100%;top:0;overflow:auto;padding:3.125rem .9375rem .9375rem 1.875rem;transition:left .3s}.menu::before{content:"";position:fixed;width:100%;height:4.375rem;left:-100%;top:0;transition:left .3s;z-index:2}.menu-open .menu{left:0}.menu-open .menu::before{left:0}.menu__link{font-size:1.5rem}.icon-menu{display:block;position:relative;width:2.5rem;height:1.5rem;z-index:5}.icon-menu span,.icon-menu::after,.icon-menu::before{content:"";transition:all .3s ease 0s;right:0;position:absolute;width:100%;height:.125rem;background-color:#fff}.icon-menu::before{top:0}.icon-menu::after{bottom:0}.icon-menu span{top:calc(50% - .0625rem)}.menu-open .icon-menu span{width:0}.menu-open .icon-menu::before{top:calc(50% - .0625rem);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.menu-open .icon-menu::after{bottom:calc(50% - .0625rem);-webkit-transform:rotate(45deg);transform:rotate(45deg)}.page{margin-left:3.75rem}.item-mission__image{width:100%;aspect-ratio:5/3;height:auto}.footer{margin-left:3.75rem}.cookie-popup{width:96%}}@media (max-width:47.99875em)and (any-hover:none){.icon-menu{cursor:default}}@media (max-width:29.99875em){.order__content{padding:.9375rem}.order__button{width:100%;padding:1.25rem 1.875rem}}@media (min-width:20em)and (max-width:75em){.popup__text{font-size:clamp(1.25rem ,1.1136363636rem + .6818181818vw ,1.625rem)}.title{font-size:clamp(2rem ,1.6363636364rem + 1.8181818182vw ,3rem)}.title{margin-bottom:clamp(1.5625rem ,1.2215909091rem + 1.7045454545vw ,2.5rem)}.text{font-size:clamp(1.125rem ,.9886363636rem + .6818181818vw ,1.5rem)}.header{max-width:clamp(8.125rem ,7.6704545455rem + 2.2727272727vw ,9.375rem)}.menu__link{font-size:clamp(1.125rem ,1.0340909091rem + .4545454545vw ,1.375rem)}.hero{padding-top:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.hero{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.hero__title{font-size:clamp(3rem ,2.7272727273rem + 1.3636363636vw ,3.75rem)}.hero__title{margin-bottom:clamp(1.5625rem ,1.2215909091rem + 1.7045454545vw ,2.5rem)}.mission{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.item-mission__title{font-size:clamp(1.75rem ,1.5681818182rem + .9090909091vw ,2.25rem)}.item-mission__text{font-size:clamp(1.125rem ,1.0340909091rem + .4545454545vw ,1.375rem)}.quality{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.range{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.faq{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.order{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.order__title{font-size:clamp(1.5rem ,1.3636363636rem + .6818181818vw ,1.875rem)}.order__button{font-size:clamp(1.25rem ,1.1136363636rem + .6818181818vw ,1.625rem)}.footer{padding-top:clamp(.9375rem ,.8238636364rem + .5681818182vw ,1.25rem)}.footer{padding-bottom:clamp(.9375rem ,.8238636364rem + .5681818182vw ,1.25rem)}.footer__link{font-size:clamp(1rem ,.9090909091rem + .4545454545vw ,1.25rem)}.footer__note{font-size:clamp(.75rem ,.7045454545rem + .2272727273vw ,.875rem)}.footer__questions{font-size:clamp(1rem ,.9090909091rem + .4545454545vw ,1.25rem)}.history{padding-top:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.history{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.contact-page{padding-top:clamp(2.5rem ,1.5909090909rem + 4.5454545455vw ,5rem)}.contact-page{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.form-contact-page__label{font-size:clamp(1.125rem ,.9886363636rem + .6818181818vw ,1.5rem)}.policy{padding-top:clamp(2.5rem ,1.5909090909rem + 4.5454545455vw ,5rem)}.policy{padding-bottom:clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)}.policy__label{font-size:clamp(1.5rem ,1.3636363636rem + .6818181818vw ,1.875rem)}}@media (min-width:47.99875em)and (min-width:20em)and (max-width:75em){.page{margin-left:clamp(8.125rem ,7.6704545455rem + 2.2727272727vw ,9.375rem)}.footer{margin-left:clamp(8.125rem ,7.6704545455rem + 2.2727272727vw ,9.375rem)}}@media (min-width:47.99875em)and (max-width:20em){.page{margin-left:8.125rem}.footer{margin-left:8.125rem}}@media (any-hover:hover){.menu__link:hover{background-color:#2e1606}.item-range__image:hover img{-webkit-transform:scale(1.05);transform:scale(1.05)}.item-range__name:hover{color:#9c9b9b}.item-range__button:hover{background-color:#482209;color:#fff}.order__button:hover{background-color:#482209;color:#fff}.footer__link:hover{text-decoration:underline}.footer__questions a:hover{text-decoration:underline}}
+	</style>
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<button type="button" class="menu__icon icon-menu"><span></span></button>
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link">Heim</a></li>
+						<li class="menu__item"><a href="index.html#mission" class="menu__link">Auftrag und Vision</a></li>
+						<li class="menu__item"><a href="history.html" class="menu__link">Geschichte</a></li>
+						<li class="menu__item"><a href="index.html#quality" class="menu__link">Qualität</a></li>
+						<li class="menu__item"><a href="index.html#range" class="menu__link">Sortiment</a></li>
+						<li class="menu__item"><a href="contact.html" class="menu__link">Bestellung</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="page">
+			<div class="page__hero hero">
+				<div class="hero__container">
+					<h1 class="hero__title">Willkommen bei Krok & Stil!</h1>
+					<div class="hero__text text">
+						Sind Sie auf der Suche nach dem perfekten Paar Schuhe, das
+						Ihren Stil unterstreicht und jeden Schritt bequem macht?
+						Dann sind Sie bei uns genau richtig! Bei Krok & Stil bieten
+						wir Ihnen eine große Auswahl - von eleganten Schuhen bis zu
+						bequemen Sneakers, von Klassikern bis zu den neuesten
+						Trends. Wir glauben, dass Schuhe nicht nur eine Sache sind,
+						sondern eine Möglichkeit, sich auszudrücken. Treten Sie
+						ein, wählen Sie Ihr Paar und gehen Sie selbstbewusst in den
+						neuen Tag!)
+					</div>
+				</div>
+			</div>
+			<div class="page__mission mission" id="mission">
+				<div class="mission__container">
+					<h2 class="mission__title title">Auftrag und Vision</h2>
+					<div class="mission__items">
+						<div class="mission__item item-mission">
+							<div class="item-mission__content">
+								<h4 class="item-mission__title">Unsere Mission</h4>
+								<div class="item-mission__text">
+									Bei Krok & Stil wollen wir jeden Ihrer Schritte zu
+									etwas Besonderem machen. Unser Ziel ist es, Schuhe
+									anzubieten, die Stil, Komfort und Qualität
+									vereinen, damit Sie sich in jeder Situation sicher
+									fühlen können. Wir wählen die besten Modelle aus -
+									von lässigen Sneakern bis hin zu anspruchsvollen
+									Schuhen - damit jeder Kunde sein perfektes Paar
+									findet und sich mit Freude fortbewegt.
+								</div>
+							</div>
+							<div class="item-mission__image">
+								<img src="img/Mission/01.webp" alt="Image" />
+							</div>
+						</div>
+						<div class="mission__item item-mission">
+							<div class="item-mission__image">
+								<img src="img/Mission/02.webp" alt="Image" />
+							</div>
+							<div class="item-mission__content">
+								<h4 class="item-mission__title">Unsere Vision</h4>
+								<div class="item-mission__text">
+									Wir möchten, dass Krok & Stil nicht nur ein
+									Geschäft ist, sondern ein Ort, an dem Ihr
+									einzigartiger Stil geboren wird. Unser Traum ist
+									es, Menschen dazu zu inspirieren, sich durch
+									Schuhe auszudrücken und dabei Mode mit
+									Funktionalität zu verbinden. Wir sehen eine Welt,
+									in der jeder Schritt ein kleiner Sieg ist und
+									Qualitätsschuhe ein Teil Ihrer Geschichte werden.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__quality quality" id="quality">
+				<div class="quality__container">
+					<h2 class="quality__title title">Qualität</h2>
+					<div class="quality__items">
+						<div class="quality__item item-quality">
+							<div class="item-quality__text text">
+								Wir von Krok & Stil wissen, dass Schuhe nicht nur ein
+								Accessoire sind, sondern Ihr zuverlässiger Begleiter
+								im Alltag. Deshalb ist Qualität für uns die
+								Grundlage. Wir wählen die Materialien sorgfältig aus
+								- von strapazierfähigem Leder bis zu atmungsaktiven
+								Stoffen - und arbeiten nur mit vertrauenswürdigen
+								Herstellern zusammen, deren Standards unseren hohen
+								Anforderungen entsprechen.
+							</div>
+							<div class="item-quality__image image">
+								<img src="img/Mission/03.webp" alt="Image" />
+							</div>
+						</div>
+						<div class="quality__item item-quality">
+							<div class="item-quality__image image">
+								<img src="img/Mission/04.webp" alt="Image" />
+							</div>
+							<div class="item-quality__text text">
+								Jedes Paar in unserem Geschäft ist so konzipiert,
+								dass es den Anforderungen der Zeit und der Straße
+								standhält - egal, ob es sich um Stadtpflaster oder
+								lange Spaziergänge handelt. Bequeme Einlegesohlen,
+								durchdachtes Design und robuste Nähte sorgen dafür,
+								dass Ihre Schuhe Sie nicht im Stich lassen werden.
+								Wir glauben, dass wahre Qualität dann gegeben ist,
+								wenn Stil und Komfort Hand in Hand gehen und Sie dies
+								vom ersten Schritt an spüren.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__range range" id="range">
+				<div class="range__container">
+					<h2 class="range__title title">
+						Sortiment
+					</h2>
+					<div class="range__items">
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/01.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Urban Step" - Freizeit-Sneaker
+								</a>
+								<div class="item-range__desctiption">
+									Leichte Sneaker aus atmungsaktivem Mesh und gepolsterten EVA-Sohlen. Ideal für Stadtspaziergänge oder Outdoor-Aktivitäten.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										59 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/02.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Classic Elegance" - Lederschuhe
+								</a>
+								<div class="item-range__desctiption">
+									Beschreibung: Klassische Schuhe aus echtem Leder mit weicher Innensohle. Geeignet für das Büro oder besondere Anlässe.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										89 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/03.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Cozy Trail" - Isolierte Stiefel
+								</a>
+								<div class="item-range__desctiption">
+									Beschreibung: Wasserdichte Stiefel aus echtem Wildleder und isoliert mit Ökofell. Für kalte Tage und stilvolle Spaziergänge.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										109 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/04.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Summer Breeze" - Leichte Sandalen
+								</a>
+								<div class="item-range__desctiption">
+									Beschreibung: Offene Sandalen aus weichem Leder mit einem niedrigen Keilabsatz. Komfort und Stil für heiße Tage.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										49 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/05.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Sport Pulse" - Sportliche Turnschuhe
+								</a>
+								<div class="item-range__desctiption">
+									Beschreibung: Helle Turnschuhe mit strapazierfähiger Sohle und Obermaterial aus Textil. Für das Training oder einen aktiven Lebensstil.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										69 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/06.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Soft Move" - Freizeit-Slipper
+								</a>
+								<div class="item-range__desctiption">
+									Beschreibung: Weiche Nubukleder-Slipper mit flexibler Sohle. Eine gute Wahl für lässige Looks.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										79 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+						<div class="range__item item-range">
+							<a href="contact.html" class="item-range__image image">
+								<img src="img/Asortiment/07.webp" alt="Image">
+							</a>
+							<div class="item-range__content">
+								<a href="contact.html" class="item-range__name">
+									"Winter Grace" - Hohe Stiefel
+								</a>
+								<div class="item-range__desctiption">
+									Beschreibung: Elegante Stiefel aus echtem Leder, isoliert mit Schafsfell. Für Wärme und Stil im Winter.
+								</div>
+								<div class="item-range__footer">
+									<div class="item-range__price">
+										139 €
+									</div>
+									<a href="contact.html" class="item-range__button">Einkaufen</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__faq faq">
+				<div class="faq__container">
+					<div class="faq__title title">
+						FAQ
+					</div>
+					<div data-spollers data-one-spoller class="spollers">
+						<details class="spollers__item">
+							<summary class="spollers__title">Welche Größen gibt es bei Krok & Stil?</summary>
+							<div class="spollers__body">Wir haben Schuhe in den Größen 36 bis 46 (EU), je nach Modell. Bitte kontaktieren Sie unseren Kundenservice für die genaue Verfügbarkeit der Größen.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Aus welchen Materialien sind Ihre Schuhe hergestellt?</summary>
+							<div class="spollers__body">Wir verwenden echtes Leder, Wildleder, Nubuk, atmungsaktive Textilien und hochwertige synthetische Komponenten (z.B. EVA für Sohlen). Alle Details sind in der Beschreibung der einzelnen Modelle angegeben.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Wie pflegt man die Schuhe aus Ihrem Geschäft?</summary>
+							<div class="spollers__body">Bei Lederschuhen empfehlen wir die Verwendung von speziellen Cremes und Sprays, bei Wildleder - Bürsten und Schutzmittel. Eine ausführliche Anleitung liegt jedem Paar bei.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Kann ich die Ware zurückgeben oder umtauschen?</summary>
+							<div class="spollers__body">Ja, Sie können Ihre Schuhe innerhalb von 30 Tagen nach dem Kauf zurückgeben oder umtauschen, wenn sie ungetragen sind und die Originalverpackung intakt ist. Kontaktieren Sie uns einfach, um dies zu arrangieren.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Wie lange ist Ihre Lieferzeit in Deutschland?</summary>
+							<div class="spollers__body">Wir liefern deutschlandweit mit DHL oder der Deutschen Post. Die Lieferzeit beträgt 2-4 Werktage. Sie können Ihr Paket online verfolgen.</div>
+						</details>
+					</div>
+				</div>
+			</div>
+			<div class="page__order order">
+				<div class="order__container">
+					<div class="order__content">
+						<h2 class="order__title">
+							Hat Ihnen etwas gefallen? Haben Sie noch Fragen? Möchten Sie mehr wissen? Möchten Sie bestellen? Klicken Sie auf die Schaltfläche und wir warten auf Sie!
+						</h2>
+						<a href="contact.html" class="order__button">Schreib Uns</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Кукі попап -->
+		<div class="cookie-popup" id="cookiePopup">
+			<p>Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sind Sie einverstanden?</p>
+			<div class="buttons">
+				<button id="acceptCookies">Ich stimme zu</button>
+				<button id="declineCookies">Nicht einverstanden</button>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<div class="footer__container">
+				<div class="footer__links">
+					<a href="terms.html" class="footer__link"> Nutzungsbedingungen </a>
+					<a href="policy.html" class="footer__link">
+						Datenschutzrichtlinie
+					</a>
+					<a href="cookies.html" class="footer__link"> Cookie-Richtlinien </a>
+				</div>
+				<div class="footer__note">
+					Die Verfügbarkeit der Größen kann variieren, daher empfehlen wir Ihnen, sich vor der Bestellung über die neuesten Informationen zu informieren. Alle Schuhe bei Krok & Stil sind ausschließlich für Erwachsene bestimmt. Bitte überprüfen Sie die gewählte Größe und die eingegebenen Daten sorgfältig, wenn Sie Ihre Bestellung aufgeben, um Fehler zu vermeiden. Wir sind nicht verantwortlich für eventuelle Ungenauigkeiten des Käufers.
+				</div>
+				<div class="footer__questions">
+					Haben Sie noch Fragen? <br> Zögern Sie nicht, uns zu kontaktieren: <a href="mailto:krokandstil@gmail.com">krokandstil@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		(()=>{"use strict";const e={};let t=(e,t=500,o=0)=>{e.classList.contains("_slide")||(e.classList.add("_slide"),e.style.transitionProperty="height, margin, padding",e.style.transitionDuration=t+"ms",e.style.height=`${e.offsetHeight}px`,e.offsetHeight,e.style.overflow="hidden",e.style.height=o?`${o}px`:"0px",e.style.paddingTop=0,e.style.paddingBottom=0,e.style.marginTop=0,e.style.marginBottom=0,window.setTimeout((()=>{e.hidden=!o,!o&&e.style.removeProperty("height"),e.style.removeProperty("padding-top"),e.style.removeProperty("padding-bottom"),e.style.removeProperty("margin-top"),e.style.removeProperty("margin-bottom"),!o&&e.style.removeProperty("overflow"),e.style.removeProperty("transition-duration"),e.style.removeProperty("transition-property"),e.classList.remove("_slide"),document.dispatchEvent(new CustomEvent("slideUpDone",{detail:{target:e}}))}),t))},o=(e,t=500,o=0)=>{if(!e.classList.contains("_slide")){e.classList.add("_slide"),e.hidden=!e.hidden&&null,o&&e.style.removeProperty("height");let s=e.offsetHeight;e.style.overflow="hidden",e.style.height=o?`${o}px`:"0px",e.style.paddingTop=0,e.style.paddingBottom=0,e.style.marginTop=0,e.style.marginBottom=0,e.offsetHeight,e.style.transitionProperty="height, margin, padding",e.style.transitionDuration=t+"ms",e.style.height=s+"px",e.style.removeProperty("padding-top"),e.style.removeProperty("padding-bottom"),e.style.removeProperty("margin-top"),e.style.removeProperty("margin-bottom"),window.setTimeout((()=>{e.style.removeProperty("height"),e.style.removeProperty("overflow"),e.style.removeProperty("transition-duration"),e.style.removeProperty("transition-property"),e.classList.remove("_slide"),document.dispatchEvent(new CustomEvent("slideDownDone",{detail:{target:e}}))}),t)}},s=!0,i=(e=500)=>{if(s){const t=document.querySelectorAll("[data-lp]");setTimeout((()=>{t.forEach((e=>{e.style.paddingRight=""})),document.body.style.paddingRight="",document.documentElement.classList.remove("lock")}),e),s=!1,setTimeout((function(){s=!0}),e)}},n=(e=500)=>{if(s){const t=document.querySelectorAll("[data-lp]"),o=window.innerWidth-document.body.offsetWidth+"px";t.forEach((e=>{e.style.paddingRight=o})),document.body.style.paddingRight=o,document.documentElement.classList.add("lock"),s=!1,setTimeout((function(){s=!0}),e)}};function r(e){setTimeout((()=>{window.FLS&&console.log(e)}),0)}function l(e,t){const o=Array.from(e).filter((function(e,o,s){if(e.dataset[t])return e.dataset[t].split(",")[0]}));if(o.length){const e=[];o.forEach((o=>{const s={},i=o.dataset[t].split(",");s.value=i[0],s.type=i[1]?i[1].trim():"max",s.item=o,e.push(s)}));let s=e.map((function(e){return"("+e.type+"-width: "+e.value+"px),"+e.value+","+e.type}));s=function(e){return e.filter((function(e,t,o){return o.indexOf(e)===t}))}(s);const i=[];if(s.length)return s.forEach((t=>{const o=t.split(","),s=o[1],n=o[2],r=window.matchMedia(o[0]),l=e.filter((function(e){if(e.value===s&&e.type===n)return!0}));i.push({itemsArray:l,matchMedia:r})})),i}}e.popup=new class{constructor(e){let t={logging:!0,init:!0,attributeOpenButton:"data-popup",attributeCloseButton:"data-close",fixElementSelector:"[data-lp]",youtubeAttribute:"data-popup-youtube",youtubePlaceAttribute:"data-popup-youtube-place",setAutoplayYoutube:!0,classes:{popup:"popup",popupContent:"popup__content",popupActive:"popup_show",bodyActive:"popup-show"},focusCatch:!0,closeEsc:!0,bodyLock:!0,hashSettings:{location:!0,goHash:!0},on:{beforeOpen:function(){},afterOpen:function(){},beforeClose:function(){},afterClose:function(){}}};this.youTubeCode,this.isOpen=!1,this.targetOpen={selector:!1,element:!1},this.previousOpen={selector:!1,element:!1},this.lastClosed={selector:!1,element:!1},this._dataValue=!1,this.hash=!1,this._reopen=!1,this._selectorOpen=!1,this.lastFocusEl=!1,this._focusEl=["a[href]",'input:not([disabled]):not([type="hidden"]):not([aria-hidden])',"button:not([disabled]):not([aria-hidden])","select:not([disabled]):not([aria-hidden])","textarea:not([disabled]):not([aria-hidden])","area[href]","iframe","object","embed","[contenteditable]",'[tabindex]:not([tabindex^="-"])'],this.options={...t,...e,classes:{...t.classes,...e?.classes},hashSettings:{...t.hashSettings,...e?.hashSettings},on:{...t.on,...e?.on}},this.bodyLock=!1,this.options.init&&this.initPopups()}initPopups(){this.popupLogging("Прокинувся"),this.eventsPopup()}eventsPopup(){document.addEventListener("click",function(e){const t=e.target.closest(`[${this.options.attributeOpenButton}]`);if(t)return e.preventDefault(),this._dataValue=t.getAttribute(this.options.attributeOpenButton)?t.getAttribute(this.options.attributeOpenButton):"error",this.youTubeCode=t.getAttribute(this.options.youtubeAttribute)?t.getAttribute(this.options.youtubeAttribute):null,"error"!==this._dataValue?(this.isOpen||(this.lastFocusEl=t),this.targetOpen.selector=`${this._dataValue}`,this._selectorOpen=!0,void this.open()):void this.popupLogging(`Йой, не заповнено атрибут у ${t.classList}`);return e.target.closest(`[${this.options.attributeCloseButton}]`)||!e.target.closest(`.${this.options.classes.popupContent}`)&&this.isOpen?(e.preventDefault(),void this.close()):void 0}.bind(this)),document.addEventListener("keydown",function(e){if(this.options.closeEsc&&27==e.which&&"Escape"===e.code&&this.isOpen)return e.preventDefault(),void this.close();this.options.focusCatch&&9==e.which&&this.isOpen&&this._focusCatch(e)}.bind(this)),this.options.hashSettings.goHash&&(window.addEventListener("hashchange",function(){window.location.hash?this._openToHash():this.close(this.targetOpen.selector)}.bind(this)),window.addEventListener("load",function(){window.location.hash&&this._openToHash()}.bind(this)))}open(e){if(s)if(this.bodyLock=!(!document.documentElement.classList.contains("lock")||this.isOpen),e&&"string"==typeof e&&""!==e.trim()&&(this.targetOpen.selector=e,this._selectorOpen=!0),this.isOpen&&(this._reopen=!0,this.close()),this._selectorOpen||(this.targetOpen.selector=this.lastClosed.selector),this._reopen||(this.previousActiveElement=document.activeElement),this.targetOpen.element=document.querySelector(this.targetOpen.selector),this.targetOpen.element){if(this.youTubeCode){const e=`https://www.youtube.com/embed/${this.youTubeCode}?rel=0&showinfo=0&autoplay=1`,t=document.createElement("iframe");t.setAttribute("allowfullscreen","");const o=this.options.setAutoplayYoutube?"autoplay;":"";if(t.setAttribute("allow",`${o}; encrypted-media`),t.setAttribute("src",e),!this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`)){this.targetOpen.element.querySelector(".popup__text").setAttribute(`${this.options.youtubePlaceAttribute}`,"")}this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`).appendChild(t)}this.options.hashSettings.location&&(this._getHash(),this._setHash()),this.options.on.beforeOpen(this),document.dispatchEvent(new CustomEvent("beforePopupOpen",{detail:{popup:this}})),this.targetOpen.element.classList.add(this.options.classes.popupActive),document.documentElement.classList.add(this.options.classes.bodyActive),this._reopen?this._reopen=!1:!this.bodyLock&&n(),this.targetOpen.element.setAttribute("aria-hidden","false"),this.previousOpen.selector=this.targetOpen.selector,this.previousOpen.element=this.targetOpen.element,this._selectorOpen=!1,this.isOpen=!0,setTimeout((()=>{this._focusTrap()}),50),this.options.on.afterOpen(this),document.dispatchEvent(new CustomEvent("afterPopupOpen",{detail:{popup:this}})),this.popupLogging("Відкрив попап")}else this.popupLogging("Йой, такого попапу немає. Перевірте коректність введення. ")}close(e){e&&"string"==typeof e&&""!==e.trim()&&(this.previousOpen.selector=e),this.isOpen&&s&&(this.options.on.beforeClose(this),document.dispatchEvent(new CustomEvent("beforePopupClose",{detail:{popup:this}})),this.youTubeCode&&this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`)&&(this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`).innerHTML=""),this.previousOpen.element.classList.remove(this.options.classes.popupActive),this.previousOpen.element.setAttribute("aria-hidden","true"),this._reopen||(document.documentElement.classList.remove(this.options.classes.bodyActive),!this.bodyLock&&i(),this.isOpen=!1),this._removeHash(),this._selectorOpen&&(this.lastClosed.selector=this.previousOpen.selector,this.lastClosed.element=this.previousOpen.element),this.options.on.afterClose(this),document.dispatchEvent(new CustomEvent("afterPopupClose",{detail:{popup:this}})),setTimeout((()=>{this._focusTrap()}),50),this.popupLogging("Закрив попап"))}_getHash(){this.options.hashSettings.location&&(this.hash=this.targetOpen.selector.includes("#")?this.targetOpen.selector:this.targetOpen.selector.replace(".","#"))}_openToHash(){let e=document.querySelector(`.${window.location.hash.replace("#","")}`)?`.${window.location.hash.replace("#","")}`:document.querySelector(`${window.location.hash}`)?`${window.location.hash}`:null;(document.querySelector(`[${this.options.attributeOpenButton} = "${e}"]`)?document.querySelector(`[${this.options.attributeOpenButton} = "${e}"]`):document.querySelector(`[${this.options.attributeOpenButton} = "${e.replace(".","#")}"]`))&&e&&this.open(e)}_setHash(){history.pushState("","",this.hash)}_removeHash(){history.pushState("","",window.location.href.split("#")[0])}_focusCatch(e){const t=this.targetOpen.element.querySelectorAll(this._focusEl),o=Array.prototype.slice.call(t),s=o.indexOf(document.activeElement);e.shiftKey&&0===s&&(o[o.length-1].focus(),e.preventDefault()),e.shiftKey||s!==o.length-1||(o[0].focus(),e.preventDefault())}_focusTrap(){const e=this.previousOpen.element.querySelectorAll(this._focusEl);!this.isOpen&&this.lastFocusEl?this.lastFocusEl.focus():e[0].focus()}popupLogging(e){this.options.logging&&r(`[Попапос]: ${e}`)}}({});let a=(e,t=!1,o=500,s=0)=>{const n=document.querySelector(e);if(n){let l="",a=0;if(t){l="header.header";const e=document.querySelector(l);e.classList.contains("_header-scroll")?a=e.offsetHeight:(e.style.cssText="transition-duration: 0s;",e.classList.add("_header-scroll"),a=e.offsetHeight,e.classList.remove("_header-scroll"),setTimeout((()=>{e.style.cssText=""}),0))}let c={speedAsDuration:!0,speed:o,header:l,offset:s,easing:"easeOutQuad"};if(document.documentElement.classList.contains("menu-open")&&(i(),document.documentElement.classList.remove("menu-open")),"undefined"!=typeof SmoothScroll)(new SmoothScroll).animateScroll(n,"",c);else{let e=n.getBoundingClientRect().top+scrollY;e=a?e-a:e,e=s?e-s:e,window.scrollTo({top:e,behavior:"smooth"})}r(`[gotoBlock]: Юхуу...їдемо до ${e}`)}else r(`[gotoBlock]: Йой... Такого блоку немає на сторінці: ${e}`)};let c={getErrors(e){let t=0,o=e.querySelectorAll("*[data-required]");return o.length&&o.forEach((e=>{null===e.offsetParent&&"SELECT"!==e.tagName||e.disabled||(t+=this.validateInput(e))})),t},validateInput(e){let t=0;return"email"===e.dataset.required?(e.value=e.value.replace(" ",""),this.emailTest(e)?(this.addError(e),this.removeSuccess(e),t++):(this.removeError(e),this.addSuccess(e))):("checkbox"!==e.type||e.checked)&&e.value.trim()?(this.removeError(e),this.addSuccess(e)):(this.addError(e),this.removeSuccess(e),t++),t},addError(e){e.classList.add("_form-error"),e.parentElement.classList.add("_form-error");let t=e.parentElement.querySelector(".form__error");t&&e.parentElement.removeChild(t),e.dataset.error&&e.parentElement.insertAdjacentHTML("beforeend",`<div class="form__error">${e.dataset.error}</div>`)},removeError(e){e.classList.remove("_form-error"),e.parentElement.classList.remove("_form-error"),e.parentElement.querySelector(".form__error")&&e.parentElement.removeChild(e.parentElement.querySelector(".form__error"))},addSuccess(e){e.classList.add("_form-success"),e.parentElement.classList.add("_form-success")},removeSuccess(e){e.classList.remove("_form-success"),e.parentElement.classList.remove("_form-success")},formClean(t){t.reset(),setTimeout((()=>{let o=t.querySelectorAll("input,textarea");for(let e=0;e<o.length;e++){const t=o[e];t.parentElement.classList.remove("_form-focus"),t.classList.remove("_form-focus"),c.removeError(t)}let s=t.querySelectorAll(".checkbox__input");if(s.length>0)for(let e=0;e<s.length;e++){s[e].checked=!1}if(e.select){let o=t.querySelectorAll("div.select");if(o.length)for(let t=0;t<o.length;t++){const s=o[t].querySelector("select");e.select.selectBuild(s)}}}),0)},emailTest:e=>!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(e.value)};let p=!1;setTimeout((()=>{if(p){let e=new Event("windowScroll");window.addEventListener("scroll",(function(t){document.dispatchEvent(e)}))}}),0),document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("cookiePopup"),t=document.getElementById("acceptCookies"),o=document.getElementById("declineCookies");localStorage.getItem("cookieConsent")||(e.style.display="grid"),t?.addEventListener("click",(()=>{localStorage.setItem("cookieConsent","true"),e.style.display="none"})),o?.addEventListener("click",(()=>{localStorage.setItem("cookieConsent","false"),window.location.href="cookies.html"}))})),window.FLS=!0,document.querySelector(".icon-menu")&&document.addEventListener("click",(function(e){s&&e.target.closest(".icon-menu")&&(((e=500)=>{document.documentElement.classList.contains("lock")?i(e):n(e)})(),document.documentElement.classList.toggle("menu-open"))})),function(){const e=document.querySelectorAll("[data-spollers]");if(e.length>0){document.addEventListener("click",a);const s=Array.from(e).filter((function(e,t,o){return!e.dataset.spollers.split(",")[0]}));s.length&&n(s);let i=l(e,"spollers");function n(e,t=!1){e.forEach((e=>{e=t?e.item:e,t.matches||!t?(e.classList.add("_spoller-init"),r(e)):(e.classList.remove("_spoller-init"),r(e,!1))}))}function r(e,t=!0){let o=e.querySelectorAll("details");o.length&&o.forEach((e=>{let o=e.querySelector("summary");t?(o.removeAttribute("tabindex"),e.hasAttribute("data-open")?(o.classList.add("_spoller-active"),e.open=!0):(e.open=!1,o.nextElementSibling.hidden=!0)):(o.setAttribute("tabindex","-1"),o.classList.remove("_spoller-active"),e.open=!0,o.nextElementSibling.hidden=!1)}))}function a(e){const s=e.target;if(s.closest("summary")&&s.closest("[data-spollers]")&&(e.preventDefault(),s.closest("[data-spollers]").classList.contains("_spoller-init"))){const e=s.closest("summary"),i=e.closest("details"),n=e.closest("[data-spollers]"),r=n.hasAttribute("data-one-spoller"),l=i.hasAttribute("data-spoller-scroll"),a=n.dataset.spollersSpeed?parseInt(n.dataset.spollersSpeed):500;if(!n.querySelectorAll("._slide").length&&(r&&!i.open&&c(n),i.open?setTimeout((()=>{i.open=!1}),a):i.open=!0,e.classList.toggle("_spoller-active"),((e,s=500)=>{e.hidden?o(e,s):t(e,s)})(e.nextElementSibling,a),l&&e.classList.contains("_spoller-active"))){const e=i.dataset.spollerScroll,t=+e?+e:0,o=i.hasAttribute("data-spoller-scroll-noheader")?document.querySelector(".header").offsetHeight:0;window.scrollTo({top:i.offsetTop-(t+o),behavior:"smooth"})}}if(!s.closest("[data-spollers]")){const e=document.querySelectorAll("[data-spoller-close]");e.length&&e.forEach((e=>{const o=e.closest("[data-spollers]"),s=e.parentNode;if(o.classList.contains("_spoller-init")){const i=o.dataset.spollersSpeed?parseInt(o.dataset.spollersSpeed):500;e.classList.remove("_spoller-active"),t(e.nextElementSibling,i),setTimeout((()=>{s.open=!1}),i)}}))}}function c(e){const o=e.querySelector("details[open]");if(o&&!e.querySelectorAll("._slide").length){const s=o.querySelector("summary"),i=e.dataset.spollersSpeed?parseInt(e.dataset.spollersSpeed):500;s.classList.remove("_spoller-active"),t(s.nextElementSibling,i),setTimeout((()=>{o.open=!1}),i)}}i&&i.length&&i.forEach((e=>{e.matchMedia.addEventListener("change",(function(){n(e.itemsArray,e.matchMedia)})),n(e.itemsArray,e.matchMedia)}))}}(),function(){const t=document.forms;if(t.length)for(const e of t)e.addEventListener("submit",(function(e){o(e.target,e)})),e.addEventListener("reset",(function(e){const t=e.target;c.formClean(t)}));async function o(e,t){if(0===(e.hasAttribute("data-no-validate")?0:c.getErrors(e))){if(e.hasAttribute("data-ajax")){t.preventDefault();const o=e.getAttribute("action")?e.getAttribute("action").trim():"#",i=e.getAttribute("method")?e.getAttribute("method").trim():"GET",n=new FormData(e);e.classList.add("_sending");const r=await fetch(o,{method:i,body:n});if(r.ok){let t=await r.json();e.classList.remove("_sending"),s(e,t)}else alert("Помилка"),e.classList.remove("_sending")}else e.hasAttribute("data-dev")&&(t.preventDefault(),s(e))}else if(t.preventDefault(),e.querySelector("._form-error")&&e.hasAttribute("data-goto-error")){const t=e.dataset.gotoError?e.dataset.gotoError:"._form-error";a(t,!0,1e3)}}function s(t,o=""){document.dispatchEvent(new CustomEvent("formSent",{detail:{form:t}})),setTimeout((()=>{if(e.popup){const o=t.dataset.popupMessage;o&&e.popup.open(o)}}),0),c.formClean(t),r(`[Форми]: ${"Форму відправлено!"}`)}}()})();
+	</script>
+</body>
+
+</html>
